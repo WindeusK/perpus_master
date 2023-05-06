@@ -8,6 +8,12 @@ Website project admin perpus untuk keperluan ujian. Dibuat oleh Raynaldo Winson 
 - Menggunakan relational database
 - Database mengandung minimal 3 tabel
 
+## Cara menggunakan website ini
+
+- Pertama-tama download repository ini.
+- Letakkan hasil download di lokasi folder ```C:/xampp/htdocs```
+- Hidupkan XAMPP. Nyalakan semua fitur yang tersedia. Jika tidak bisa, maka cukup nyalakan Apache dan MySQL saja.
+- Buka browser anda lalu ketik ```localhost:8080/perpus_master/main.php```
 ## Struktur Database
 
 Sebelum memulai menggunakan website diperlukan persiapan berupa pembuatan database di XAMPP terlebih dahulu. Dengan mengakses link di [sini](localhost:8080/phpmyadmin) (jika menggunakan XAMPP versi terbaru).
