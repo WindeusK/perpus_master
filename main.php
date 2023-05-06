@@ -19,7 +19,10 @@
         <!-- Container Bootstrap -->
         <div class="container-fluid">
             <!-- Content -->
-            
+            <?php 
+                require('./script/db_setup.php')
+            ?>
+
         </div>
     </body>
 </html>
