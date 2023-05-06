@@ -5,6 +5,7 @@
         require('./script/conn.php');
 
         $query = "CREATE DATABASE IF NOT EXISTS perpus_master";
+        
         if ($conn->query($query) == true) {
             //Create Database success
             $status->complete = true;
