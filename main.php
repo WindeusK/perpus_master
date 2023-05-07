@@ -27,15 +27,15 @@
             <img src="https://smkn1tanjungpandan.sch.id/wp-content/uploads/2022/10/logo-smk-1-5.png" class="img-fluid rounded">
             <h1>Selamat Datang di <br><?=$settings->name; ?></h1>
 
-            <a class ="btn btn-outline-primary btn-lg mt-5" href="./buku.php">
+            <a class ="btn btn-outline-primary btn-lg mt-5 mainbtn" href="./buku.php">
                 Buku
             </a>
             <br>
-            <a class ="btn btn-outline-primary btn-lg mt-4" href="./anggota.php">
+            <a class ="btn btn-outline-primary btn-lg mt-4 mainbtn" href="./anggota.php">
                 Anggota
             </a>
             <br>
-            <a class ="btn btn-outline-primary btn-lg mt-4" href="./buku.php">
+            <a class ="btn btn-outline-primary btn-lg mt-4 mainbtn" href="./buku.php">
                 Peminjaman
             </a>
             </center>
