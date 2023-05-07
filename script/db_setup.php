@@ -1,5 +1,5 @@
 <?php
-    $status_json = file_get_contents("./script/db_status.json");
+    $status_json = file_get_contents("./script/settings.json");
     $status = json_decode($status_json);
     if ($status->complete == false) {
         require('./script/conn.php');
@@ -10,7 +10,7 @@
             //Create Database success
             $status->complete = true;
             $status_json = json_encode($status);
-            file_put_contents('./script/db_status.json', $status_json);
+            file_put_contents('./script/settings.json', $status_json);
         } else {
             echo "Error: " . $conn->error;
         }
