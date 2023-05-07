@@ -19,10 +19,12 @@
         <!-- Container Bootstrap -->
         <div class="container-fluid">
             <!-- Content -->
-            <?php 
-                require('./script/db_setup.php')
-            ?>
+            <?php require('./script/db_setup.php'); ?>
 
+            <center>
+            <img src="https://smkn1tanjungpandan.sch.id/wp-content/uploads/2022/10/logo-smk-1-5.png" class="img-fluid rounded">
+            <h1>Selamat Datang di <?=$settings->name; ?></h1>
+            </center>
         </div>
     </body>
 </html>
