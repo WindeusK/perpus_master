@@ -20,13 +20,13 @@
     <body>
         <div class="container-fluid">
             <center>
-                <nav class="navbar navbar-expand-lg bg-primary">
+                <nav class="navbar navbar-expand bg-primary">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="./main.php"><div class="text-white">Home</div></a>
 
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="btn btn-outline-light ms-1 me-1" href="./main.php">Tambah</a> 
+                                <a class="btn btn-outline-light ms-1 me-1" href="./tambahbuku.php">Tambah</a> 
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-outline-light ms-1 me-1" href="./main.php">Edit</a> 

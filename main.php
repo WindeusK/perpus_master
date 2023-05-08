@@ -24,7 +24,7 @@
             <center>
             <!-- Content -->
             
-            <img src="https://smkn1tanjungpandan.sch.id/wp-content/uploads/2022/10/logo-smk-1-5.png" class="img-fluid rounded">
+            <img src="https://smkn1tanjungpandan.sch.id/wp-content/uploads/2022/10/logo-smk-1-5.png" class="img-fluid rounded mainimg">
             <h1>Selamat Datang di <br><?=$settings->name; ?></h1>
 
             <a class ="btn btn-outline-primary btn-lg mt-5 mainbtn" href="./buku.php">
@@ -35,9 +35,17 @@
                 Anggota
             </a>
             <br>
-            <a class ="btn btn-outline-primary btn-lg mt-4 mainbtn" href="./buku.php">
+            <a class ="btn btn-outline-primary btn-lg mt-4 mb-5 mainbtn" href="./buku.php">
                 Peminjaman
             </a>
+
+            <br>
+            <br>
+
+            <h6 class="text-muted">Powered by Perpus Master</h6>
+
+            <br>
+            <br>
             </center>
         </div>
     </body>

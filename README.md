@@ -27,11 +27,11 @@ Database akan diberi nama ```perpus_master```. Berikut adalah daftar tabel beser
     - ```id_member``` (Integer) ***(Primary Key)***
     - ```nama``` (String)
     - ```email``` (String) 
-    - ```no_telp``` (Integer) (Null)
+    - ```no_telp``` (String) (Null)
 
 2. Tabel ```buku```
     - ```id_buku``` (Integer) ***(Primary Key)***
-    - ```isbn``` (Integer) *(Alternate Key)*
+    - ```isbn``` (String) *(Alternate Key)*
     - ```judul```  (String) *(Alternate Key)*
     - ```genre``` (String) (Null)
     - ```desc``` (String) (Null)
