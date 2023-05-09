@@ -28,6 +28,7 @@ Database akan diberi nama ```perpus_master```. Berikut adalah daftar tabel beser
     - ```nama``` (String)
     - ```email``` (String) 
     - ```no_telp``` (String) (Null)
+    - ```umur``` (String) (Null)
 
 2. Tabel ```buku```
     - ```id_buku``` (Integer) ***(Primary Key)***
@@ -35,7 +36,6 @@ Database akan diberi nama ```perpus_master```. Berikut adalah daftar tabel beser
     - ```judul```  (String) *(Alternate Key)*
     - ```genre``` (String) (Null)
     - ```desc``` (String) (Null)
-    - ```umur``` (String) (Null)
 
 3. Tabel ```peminjaman```
     - ```id_pinjam``` (Integer) ***(Primary Key)***
