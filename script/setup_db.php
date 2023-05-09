@@ -1,7 +1,7 @@
 <?php
 
 function createTables() {
-    require('./script/conn.php');
+    require('../script/conn.php');
     if ($conn_db->connect_error) {
         die("Connection failed: " . $conn_db->connect_error);
     }
@@ -51,7 +51,7 @@ $conn_db->query($sql);
     //success
 
     // Redirect the user to index.php upon successful completion
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit;
 }
 
@@ -61,6 +61,6 @@ createTables();
 // If the code execution reaches here, it means the script failed
 // Notify the user and redirect them back to index.php
 $message = "Setup Database gagal";
-echo "<script>alert('$message'); window.location.href = 'index.php';</script>";
+echo "<script>alert('$message'); window.location.href = '../index.php';</script>";
 exit;
 ?>
