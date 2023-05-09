@@ -21,7 +21,7 @@
             </div>
         </nav>
 
-        <form action="inputBuku.php" method="post" class="formstyle">
+        <form action="./script/inputBuku.php" method="post" class="formstyle">
             <div class="form-group">
                 <label for="inputJudul">Judul Buku:</label>
                 <input type="text" id="inputJudul" class="form-control" placeholder="Masukkan Judul Buku di sini..">
