@@ -30,6 +30,7 @@ function createTables() {
     $conn_db->query($sql);
 
     // Create peminjaman table
+    // Create peminjaman table with foreign key constraints
     $sql = "CREATE TABLE IF NOT EXISTS peminjaman (
         id_pinjam INT(11) PRIMARY KEY AUTO_INCREMENT,
         id_member INT(11),
@@ -37,8 +38,12 @@ function createTables() {
         nama VARCHAR(255),
         judul VARCHAR(255),
         tgl_pinjam DATE,
-        bts_pinjam DATE
+        bts_pinjam DATE,
+        FOREIGN KEY (id_member) REFERENCES member(id_member),
+        FOREIGN KEY (id_buku) REFERENCES buku(id_buku)
     )";
+$conn_db->query($sql);
+
     $conn_db->query($sql);
 
     $conn_db->close();
