@@ -2,12 +2,13 @@
 
 function createTables() {
     require('../script/conn.php');
+    $sql = "CREATE DATABASE IF NOT EXISTS perpus_master";
+    $conn->query($sql);
+
+    $conn_db = new mysqli($server, $username, $password, $db);
     if ($conn_db->connect_error) {
         die("Connection failed: " . $conn_db->connect_error);
     }
-
-    $sql = "CREATE DATABASE IF NOT EXISTS perpus_master";
-    $conn_db->query($sql);
 
     // Create member table
     $sql = "CREATE TABLE IF NOT EXISTS member (
@@ -24,8 +25,7 @@ function createTables() {
         isbn INT(11),
         judul VARCHAR(255),
         genre VARCHAR(255),
-        `desc` VARCHAR(255),
-        umur VARCHAR(255)
+        `desc` VARCHAR(255)
     )";
     $conn_db->query($sql);
 
