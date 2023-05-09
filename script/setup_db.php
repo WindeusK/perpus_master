@@ -60,7 +60,7 @@ createTables();
 
 // If the code execution reaches here, it means the script failed
 // Notify the user and redirect them back to index.php
-$message = "Failed to create tables.";
+$message = "Setup Database gagal";
 echo "<script>alert('$message'); window.location.href = 'index.php';</script>";
 exit;
 ?>
