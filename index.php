@@ -11,6 +11,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css">
 
+    <!-- Google Fonts import -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
     <title>Perpustakan SMKN1 Tanjungpandan</title>
 </head>
 <body>
