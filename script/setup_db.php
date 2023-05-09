@@ -49,8 +49,18 @@ $conn_db->query($sql);
     $conn_db->close();
 
     //success
+
+    // Redirect the user to index.php upon successful completion
+    header("Location: index.php");
+    exit;
 }
 
 // Call the function
 createTables();
+
+// If the code execution reaches here, it means the script failed
+// Notify the user and redirect them back to index.php
+$message = "Failed to create tables.";
+echo "<script>alert('$message'); window.location.href = 'index.php';</script>";
+exit;
 ?>
