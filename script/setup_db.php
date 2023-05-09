@@ -5,7 +5,7 @@ function createTables() {
     $sql = "CREATE DATABASE IF NOT EXISTS perpus_master";
     $conn->query($sql);
 
-    require('./script/conn_db.php');
+    require('../script/conn_db.php');
     if ($conn_db->connect_error) {
         die("Connection failed: " . $conn_db->connect_error);
     }
