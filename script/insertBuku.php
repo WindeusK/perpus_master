@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-require('../conn_db.php');
+require('../script/conn_db.php');
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO buku (isbn, judul, genre, `desc`) VALUES ('$isbn', '$judul', '$genre', '$desc')";
     if ($conn_db->query($sql) === TRUE) {
         // Redirect to tambahBuku.php upon successful insertion
-        header("Location: tambahBuku.php");
+        header("Location: ../tambahBuku.php");
         exit;
     } else {
         // Display error message
