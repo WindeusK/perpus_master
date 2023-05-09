@@ -30,7 +30,7 @@
                     <a href="./peminjaman.php" class="btn btn-outline-primary btn-lg d-block">Peminjaman</a>
                 </div>
                 <div class="mb-5">
-                    <a href="./buat_database.php" class="btn btn-outline-primary btn-lg d-block">Buat Database</a>
+                    <a href="./script/setup_db.php" class="btn btn-outline-primary btn-lg d-block">Buat Database</a>
                 </div>
             </div>
         </div>
