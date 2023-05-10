@@ -26,8 +26,8 @@
         <h1>Tambah Buku</h1>
         <form method="POST" action="./script/insertBuku.php">
             <div class="mb-3">
-                <label for="isbn" class="form-label">ISBN</label>
-                <input type="text" class="form-control" id="isbn" name="isbn" required>
+                <label for="isbn" class="form-label">ISBN (optional)</label>
+                <input type="text" class="form-control" id="isbn" name="isbn">
             </div>
             <div class="mb-3">
                 <label for="judul" class="form-label">Judul</label>

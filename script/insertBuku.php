@@ -10,6 +10,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $genre = $_POST['genre'];
     $desc = $_POST['desc'];
 
+    if (empty($isbn)) {
+        $isbn = '-';
+    }
+
     // Insert data into the 'buku' table
     $sql = "INSERT INTO buku (isbn, judul, genre, `desc`) VALUES ('$isbn', '$judul', '$genre', '$desc')";
     if ($conn_db->query($sql) === TRUE) {

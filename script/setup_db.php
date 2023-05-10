@@ -22,7 +22,7 @@ function createTables() {
     // Create buku table
     $sql = "CREATE TABLE IF NOT EXISTS buku (
         id_buku INT(11) PRIMARY KEY AUTO_INCREMENT,
-        isbn INT(11),
+        isbn VARCHAR(255),
         judul VARCHAR(255) NOT NULL,
         genre VARCHAR(255) NOT NULL,
         `desc` VARCHAR(255) NOT NULL
