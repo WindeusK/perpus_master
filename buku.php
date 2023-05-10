@@ -59,7 +59,7 @@
                         echo "<td>" . $row['genre'] . "</td>";
                         echo "<td>" . $row['desc'] . "</td>";
                         echo "<td>";
-                        echo "<a href='edit_buku.php?id=" . $row['id_buku'] . "' class='btn btn-primary'>Edit</a>";
+                        echo "<a href='editBuku.php?id=" . $row['id_buku'] . "' class='btn btn-primary'>Edit</a>";
                         echo " ";
                         echo "<a href='./script/deleteBuku.php?id=" . $row['id_buku'] . "' class='btn btn-danger'>Delete</a>";
                         echo "</td>";
