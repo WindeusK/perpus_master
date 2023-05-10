@@ -61,7 +61,7 @@
                         echo "<td>";
                         echo "<a href='edit_buku.php?id=" . $row['id_buku'] . "' class='btn btn-primary'>Edit</a>";
                         echo " ";
-                        echo "<a href='delete_buku.php?id=" . $row['id_buku'] . "' class='btn btn-danger'>Delete</a>";
+                        echo "<a href='./script/deleteBuku.php?id=" . $row['id_buku'] . "' class='btn btn-danger'>Delete</a>";
                         echo "</td>";
                         echo "</tr>";
                     }
