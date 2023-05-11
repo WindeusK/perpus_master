@@ -18,7 +18,16 @@
             <a class="navbar-brand" href="index.php">Home</a>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="tambahBuku.php">Tambah</a>
+                    <a class="nav-link" href="./buku.php">Buku</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./member.php">Member</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./peminjaman.php">Peminjaman</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tambahBuku.php">Tambah Buku</a>
                 </li>
             </ul>
         </div>

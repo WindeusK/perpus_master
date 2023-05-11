@@ -13,6 +13,17 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.php">Home</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./buku.php">Buku</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./member.php">Member</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./peminjaman.php">Peminjaman</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="container-fluid">
@@ -20,7 +31,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>ID Peminjaman</th>
                     <th>ID Member</th>
                     <th>ID Buku</th>
                     <th>Nama</th>
@@ -56,12 +67,10 @@
                         if ($row['pengembalian']) {
                             echo "Sudah Dikembalikan";
                         } else {
-                            echo "Sudah Dikemablikan";
+                            echo "Belum Dikembalikan";
                         }
                         echo "</td>";
                         echo "<td>";
-                        echo "<a href='./script/deletePeminjaman.php?id=" . $row['id_pinjam'] . "' class='btn btn-danger'>Delete</a>";
-                        echo "<br>";
                         echo "<a href='./script/updatePeminjaman.php?id=" . $row['id_pinjam'] . "' class='btn btn-primary mt-1'>Kembalikan</a>";
                         echo "</td></tr>";
                     }
