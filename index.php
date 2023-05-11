@@ -17,9 +17,9 @@
     <title>Perpustakan SMKN1 Tanjungpandan</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="d-flex flex-column justify-content-center align-items-center vh-100">
-            <img src="https://smkn1tanjungpandan.sch.id/wp-content/uploads/2022/10/logo-smk-1-5.png" alt="Logo" class="img-fluid rounded mainimg">
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src="https://smkn1tanjungpandan.sch.id/wp-content/uploads/2022/10/logo-smk-1-5.png" alt="Logo" class="img-fluid rounded mt-5">
             <h1 class="mt-4">Selamat Datang di</h1>
             <h2>Perpustakaan SMKN1 Tanjungpandan</h2>
             <div class="mt-5">

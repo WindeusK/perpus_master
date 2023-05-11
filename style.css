@@ -1,6 +1,7 @@
-.mainimg {
-    margin-top: 30px;
-}
+.vh-100 {
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+  }
+ 
 
 body {
     font-family: 'Montserrat', sans-serif;
