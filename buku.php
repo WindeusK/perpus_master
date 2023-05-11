@@ -69,15 +69,15 @@
                         echo "<td>";
                         echo "<a href='editBuku.php?id=" . $row['id_buku'] . "' class='btn btn-primary'>Edit</a>";
                         echo " ";
-                        echo "<a href='./script/deleteBuku.php?id=" . $row['id_buku'] . "' class='btn btn-danger'>Delete</a>";
+                        echo "<a href='./pinjam.php?id=" . $row['id_buku'] . "&judul=" . $row['judul'] . "' class='btn btn-success'>Pinjam</a>";
                         echo "<br>";
-                        echo "<a href='./pinjam.php?id=" . $row['id_buku'] . "&judul=" . $row['judul'] . "' class='btn btn-success mt-1'>Pinjam</a>";
+                        echo "<a href='./script/deleteBuku.php?id=" . $row['id_buku'] . "' class='btn btn-danger mt-1'>Hapus Member</a>";  // Updated line
                         echo "</td>";
                         echo "</tr>";
                     }
                 } else {
                     echo "<tr><td colspan='6'>No data found.</td></tr>";
-                }
+                }                
                 ?>
             </tbody>
         </table>
