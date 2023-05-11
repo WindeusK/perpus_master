@@ -34,7 +34,6 @@
                     <th>Nama</th>
                     <th>Email</th>
                     <th>No. Telepon</th>
-                    <th>Alamat</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -55,8 +54,7 @@
                         echo "<td>" . $row['id_member'] . "</td>";
                         echo "<td>" . $row['nama'] . "</td>";
                         echo "<td>" . $row['email'] . "</td>";
-                        echo "<td>" . $row['telepon'] . "</td>";
-                        echo "<td>" . $row['alamat'] . "</td>";
+                        echo "<td>" . $row['no_telp'] . "</td>";
                         echo "<td>";
                         echo "<a href='./editMember.php?id=" . $row['id_member'] . "' class='btn btn-primary'>Edit</a>";
                         echo " ";
