@@ -33,8 +33,8 @@ function createTables() {
     // Create peminjaman table with foreign key constraints
     $sql = "CREATE TABLE IF NOT EXISTS peminjaman (
         id_pinjam INT(11) PRIMARY KEY AUTO_INCREMENT,
-        id_member INT(11) NOT NULL,
-        id_buku INT(11) NOT NULL,
+        id_member INT(11),
+        id_buku INT(11),
         nama VARCHAR(255) NOT NULL,
         judul VARCHAR(255) NOT NULL,
         tgl_pinjam DATE NOT NULL,
