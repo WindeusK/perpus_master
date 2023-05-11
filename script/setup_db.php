@@ -39,8 +39,8 @@ function createTables() {
         judul VARCHAR(255) NOT NULL,
         tgl_pinjam DATE NOT NULL,
         bts_pinjam DATE,
-        FOREIGN KEY (id_member) REFERENCES member(id_member),
-        FOREIGN KEY (id_buku) REFERENCES buku(id_buku),
+        FOREIGN KEY (id_member) REFERENCES member(id_member) ON UPDATE CASCADE ON DELETE SET NULL,
+        FOREIGN KEY (id_buku) REFERENCES buku(id_buku) ON UPDATE CASCADE ON DELETE SET NULL,
         pengembalian BOOLEAN
     )";
 $conn_db->query($sql);
