@@ -10,7 +10,6 @@ if (isset($_GET['id'])) {
 if (isset($_GET['judul'])) {
     $judul = $_GET['judul'];
 } else {echo "Judul tidak valid"; exit;}
-require('./script/conn_db.php');
 ?>
 
 <!DOCTYPE html>
@@ -28,27 +27,44 @@ require('./script/conn_db.php');
 </head>
 
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.php">Home</a>
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                    <a class="nav-link" href="./buku.php">Buku</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./peminjaman.php">Peminjaman</a>
+                </li>
+            </ul>
+        </a>
+    </div>
+</nav>
 <div class="container">
     <h1 class="text-center">Pinjam Buku <?= $judul ?></h1>
-    
     <form action="./script/insertPinjam.php" method="POST">
+        <input type="hidden" name="idBuku" id="idBuku" value="<?= $id ?>">
+        <input type="hidden" name="judul" id="judul" value="<?= $judul ?>">
         <div class="form-group">
-            <label for="member">Member:</label>
-            <select class="form-control" id="member" name="member">
+            <label for="memberId">Member:</label>
+            <select class="form-control" id="memberId" name="memberId">
                 <option value="">Select Member</option>
-                <?php
-                $sql = "SELECT * FROM member";
-                $result = $conn_db->query($sql);
-                if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-                        $memberId = $row['id'];
-                        $nama = $row['nama'];
-                        echo "<option value='$memberId'>$nama</option>";
+                    <?php
+                    require('./script/conn_db.php');
+                    $sql = "SELECT * FROM member";
+                    $result = $conn_db->query($sql);
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            $memberId = $row['id_member'];
+                            $nama = $row['nama'];
+                            echo "<option value='$memberId' name='memberId'>$nama</option>";
+                        }
                     }
-                }
-                ?>
-            </select>
-        </div>
+                    ?>
+        </select>
+
         <div class="form-group">
             <label for="date">Pengembalian:</label>
             <input type="date" class="form-control" id="date" name="bts_pinjam">
