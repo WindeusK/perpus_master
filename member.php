@@ -18,7 +18,7 @@
             <a class="navbar-brand" href="index.php">Home</a>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="tambahMember.php">Tambah</a>
+                    <a class="nav-link" href="./tambahMember.php">Tambah</a>
                 </li>
             </ul>
         </div>
@@ -58,9 +58,9 @@
                         echo "<td>" . $row['telepon'] . "</td>";
                         echo "<td>" . $row['alamat'] . "</td>";
                         echo "<td>";
-                        echo "<a href='editMember.php?id=" . $row['id_member'] . "' class='btn btn-primary'>Edit</a>";
+                        echo "<a href='./editMember.php?id=" . $row['id_member'] . "' class='btn btn-primary'>Edit</a>";
                         echo " ";
-                        echo "<a href='./deleteMember.php?id=" . $row['id_member'] . "' class='btn btn-danger'>Delete</a>";
+                        echo "<a href='./script/deleteMember.php?id=" . $row['id_member'] . "' class='btn btn-danger'>Delete</a>";
                         echo "</td>";
                         echo "</tr>";
                     }
