@@ -14,7 +14,7 @@ $tglPinjam = date('Y-m-d');
 $btsPinjam = isset($_POST['bts_pinjam']) ? $_POST['bts_pinjam'] : null;
 
 // Insert data into peminjaman table
-$sql = "INSERT INTO peminjaman (id_member, id_buku, nama, judul, tgl_pinjam, bts_pinjam, pengembalian) VALUES ('$memberId', '$idBuku', '$nama', '$judul', '$tglPinjam', '$btsPinjam', true)";
+$sql = "INSERT INTO peminjaman (id_member, id_buku, nama, judul, tgl_pinjam, bts_pinjam, pengembalian) VALUES ('$memberId', '$idBuku', '$nama', '$judul', '$tglPinjam', '$btsPinjam', false)";
 
 if ($conn_db->query($sql) === TRUE) {
     header('Location: ../pinjam.php?id=' . $memberId . '&judul=' . $judul);
