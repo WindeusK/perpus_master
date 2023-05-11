@@ -61,6 +61,8 @@
                         echo "<a href='editBuku.php?id=" . $row['id_buku'] . "' class='btn btn-primary'>Edit</a>";
                         echo " ";
                         echo "<a href='./script/deleteBuku.php?id=" . $row['id_buku'] . "' class='btn btn-danger'>Delete</a>";
+                        echo "<br>";
+                        echo "<a href='./pinjam.php?id=" . $row['id_buku'] . "&judul=" . $row['judul'] . "' class='btn btn-success mt-1'>Pinjam</a>";
                         echo "</td>";
                         echo "</tr>";
                     }
