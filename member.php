@@ -60,7 +60,7 @@
                         echo "<td>";
                         echo "<a href='editMember.php?id=" . $row['id_member'] . "' class='btn btn-primary'>Edit</a>";
                         echo " ";
-                        echo "<a href='./script/deleteMember.php?id=" . $row['id_member'] . "' class='btn btn-danger'>Delete</a>";
+                        echo "<a href='./deleteMember.php?id=" . $row['id_member'] . "' class='btn btn-danger'>Delete</a>";
                         echo "</td>";
                         echo "</tr>";
                     }
