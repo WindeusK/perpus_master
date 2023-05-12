@@ -71,7 +71,7 @@
                         echo " ";
                         echo "<a href='./pinjam.php?id=" . $row['id_buku'] . "&judul=" . $row['judul'] . "' class='btn btn-success'>Pinjam</a>";
                         echo "<br>";
-                        echo "<a href='./script/deleteBuku.php?id=" . $row['id_buku'] . "' class='btn btn-danger mt-1'>Hapus Member</a>";  // Updated line
+                        echo "<a href='./script/deleteBuku.php?id=" . $row['id_buku'] . "' class='btn btn-danger mt-1'>Hapus Buku</a>";  // Updated line
                         echo "</td>";
                         echo "</tr>";
                     }

@@ -1,0 +1,20 @@
+<?php
+require('../script/conn_db.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    $id = $_GET['id'];
+    $date = date("Y-m-d");
+
+    $sql = "UPDATE peminjaman SET pengembalian = true,  bts_pinjam = $date WHERE peminjaman.id_pinjam = '$id'";
+    if ($conn_db->query($sql)) {
+        header("Location: ../peminjaman.php");
+    } else {
+        echo "Error: " . $conn_db->error;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+    <body>test</body>
+</html>

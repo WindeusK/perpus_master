@@ -15,7 +15,7 @@ function createTables() {
         id_member INT(11) PRIMARY KEY AUTO_INCREMENT,
         nama VARCHAR(255) NOT NULL,
         email VARCHAR(255) NOT NULL,
-        no_telp INT(11)
+        no_telp VARCHAR(255)
     )";
     $conn_db->query($sql);
 
